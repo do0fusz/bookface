@@ -2,4 +2,8 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 <div class="well">
   <h1>bootstrap is workinss</h1>
+  <% if current_user %>
+    <%= gravatar_tag current_user.email, size: 200 %>
+  <% end %>    
+
 </div>

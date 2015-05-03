@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controller: { registrations: 'registrations'}
-  get 'pages/home'
+  devise_for :users, controllers: {registrations: 'registrations'}
   root 'pages#home'
   
   # The priority is based upon order of creation: first created -> highest priority.
