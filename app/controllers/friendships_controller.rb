@@ -20,7 +20,7 @@ class FriendshipsController < ApplicationController
 
   def accept
     @friendship.accept_friendship
-    @friendship.create_activity key: 'friendship.accepted', onwer: @frienship.user, recipient: @frienship.friend 
+    @friendship.create_activity key: 'friendship.accepted', owner: @friendship.user, recipient: @friendship.friend 
     respond_to do |format|
       format.html { redirect_to users_path, notice: "friendship accepted"}
     end
@@ -36,8 +36,6 @@ class FriendshipsController < ApplicationController
     def set_friendship
       @friendship = Friendship.find(params[:id])
     end
-
-
 
 end
 
