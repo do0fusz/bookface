@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'public_activity'
 
 gem 'gravatarify', '~> 3.0.0'
 gem 'faker'

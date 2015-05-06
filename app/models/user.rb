@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   end
 
   def active_friends
-    self.friendships.where(state:" active").map(&:friend) + self.inverse_friendships.where(state:"active").map(&:user)    
+    self.friendships.where(state: "accepted").map(&:friend) + self.inverse_friendships.where(state: "accepted").map(&:user)    
   end
 
   def friendship_status(user_2)
