@@ -18,6 +18,8 @@ gem 'gravatarify', '~> 3.0.0'
 gem 'faker'
 
 group :development, :test do
+  gem 'jazz_fingers'
+
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'

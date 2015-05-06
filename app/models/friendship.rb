@@ -12,7 +12,7 @@ class Friendship < ActiveRecord::Base
   end
 
   def accept_friendship
-    self.update_attributes(state: "accepted ")
+    self.update_attributes(state: "accepted", friended_at: Time.now)
   end
 
 end

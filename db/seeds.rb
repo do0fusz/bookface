@@ -8,7 +8,7 @@
 
 User.create(username: "do0fusz", email: "do0fusz@hotmail.com", password: "cupertino2010", password_confirmation: "cupertino2010")
 
-50.times do 
+5.times do 
   username = Faker::Name.name
   password = "foobarbaz"
   User.create!(
