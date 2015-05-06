@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'registrations'}
-  root 'pages#home'
+  root 'users#index'
 
   resources :users, only: [:show, :index]
   resources :friendships, only: [:create, :destroy, :accept] do 
