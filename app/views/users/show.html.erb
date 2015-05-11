@@ -36,13 +36,13 @@
             <%= gravatar_tag user.email, size: 50 %>
             <% end %>
           <% end %>
-
         </div>
-        
       </div>
     </div>
     <!-- post zone -->
     <div class="col-md-6">
+      <%= render "posts/form" %>
+      <%= render @posts %> 
     </div>
     <!-- profile activity -->
     <div class="col-md-3">
