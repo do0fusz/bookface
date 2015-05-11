@@ -8,9 +8,9 @@
 
 User.create(username: "do0fusz", email: "do0fusz@hotmail.com", password: "password", password_confirmation: "password")
 
-5.times do 
+15.times do 
   username = Faker::Name.name
-  password = "foobarbaz"
+  password = "hotmail"
   User.create!(
     username: username,
     email: username.gsub(' ','_') +"@hotmail.com",

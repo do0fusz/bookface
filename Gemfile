@@ -18,6 +18,8 @@ gem 'public_activity'
 gem 'gravatarify', '~> 3.0.0'
 gem 'faker'
 
+gem 'auto_html'
+
 group :development, :test do
   gem 'jazz_fingers'
 
