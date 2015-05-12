@@ -23,7 +23,7 @@ test:
 production:
   adapter: postgresql 
   database: stukbook
-  encoding: urf8
+  encoding: utf8
   min_messages: warning
   pool: 5
   time_out: 5000
